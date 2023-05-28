@@ -1,0 +1,170 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+/* Colors */
+:root {
+  /* PRIMARY */
+  /* SECONDARY */
+  --light-red: hsl(354, 100%, 66%);
+  --light-green: hsl(96, 51%, 45%);
+  /* NEUTRAL */
+  --light-grey: hsl(0, 0%, 85%);
+  --grey: hsl(0, 0%, 75%);
+  --dark: hsl(209, 33%, 12%);
+}
+
+/* General Styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--dark);
+  background-color: var(--grey);
+  min-width: 31rem;
+  position: relative;
+}
+
+article {
+  background-color: var(--light-grey);
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 2rem #00000022;
+  padding: 2rem 1rem;
+  margin-bottom: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+section {
+  position: relative;
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+#about,
+#posts,
+#resources {
+  position: absolute;
+  top: -10rem;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 4.2rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a:link,
+a:visited {
+  color: inherit;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Header */
+header {
+  height: 7rem;
+  width: 100%;
+  min-width: 31rem;
+  padding: 1rem;
+  background-color: var(--grey);
+  z-index: 999;
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo-img {
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.logo-title {
+  display: none;
+}
+
+header nav ul {
+  list-style-type: none;
+
+  display: flex;
+  gap: 2rem;
+}
+
+/* Main */
+main {
+  padding: 0 1rem 8rem;
+  max-width: 70rem;
+  margin: 10rem auto 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+/* hero-section */
+.hero-img {
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 2rem #00000022;
+  margin: auto;
+}
+
+/* about-section */
+
+/* posts-section */
+
+/* resources-section */
+
+/* Footer */
+footer {
+  height: 5rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
